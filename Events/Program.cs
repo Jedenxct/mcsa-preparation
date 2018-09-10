@@ -17,6 +17,18 @@ namespace Events
 
             // execute the delegate
             del(2, WorkType.MakePizza);
+
+            // this kind of resembles the javascript callbacks to me
+            // you just pass a function to be called
+            DoWork(del);
+            DoWork(del2);
+        }
+
+        // modular design | no need to hardcode WorkPerformed, just call whatever is passed
+        static void DoWork(WorkPerformedHandler handler)
+        {
+            // WorkPerformed(8, WorkType.DoNothing);
+            handler(8, WorkType.DoNothing);
         }
 
         static void WorkPerformed(int hours, WorkType workType)
