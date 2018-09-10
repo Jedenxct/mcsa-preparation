@@ -22,6 +22,9 @@ namespace Events
             // you just pass a function to be called
             DoWork(del);
             DoWork(del2);
+
+            // multiple delegates
+            DoAllWork();
         }
 
         // modular design | no need to hardcode WorkPerformed, just call whatever is passed
@@ -29,6 +32,19 @@ namespace Events
         {
             // WorkPerformed(8, WorkType.DoNothing);
             handler(8, WorkType.DoNothing);
+        }
+
+        // add delegates 2 and 3 to the invocation list of the first one
+        // methods get invoked in order that were added in
+        static void DoAllWork()
+        {
+            var del = new WorkPerformedHandler(WorkPerformed);
+            var del2 = new WorkPerformedHandler(WorkPerformed2);
+            var del3 = new WorkPerformedHandler(WorkPerformed3);
+
+            del += del2 += del3;
+
+            del(1, WorkType.GenerateReports);
         }
 
         static void WorkPerformed(int hours, WorkType workType)
@@ -39,6 +55,11 @@ namespace Events
         static void WorkPerformed2(int hours, WorkType workType)
         {
             Console.WriteLine($"Working on: {workType.ToString()} for {hours} hours | work2");
+        }
+
+        static void WorkPerformed3(int hours, WorkType workType)
+        {
+            Console.WriteLine($"Working on: {workType.ToString()} for {hours} hours | work3");
         }
     }
 
