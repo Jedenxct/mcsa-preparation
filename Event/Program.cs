@@ -8,6 +8,9 @@ namespace Event
         {
             var nose = new Nose();
             nose.Sneeze("fucking much");
+
+            var delay = new Delay();
+            delay.Run();
         }
     }
 }
