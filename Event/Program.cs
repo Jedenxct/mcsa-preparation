@@ -6,7 +6,8 @@ namespace Event
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var nose = new Nose();
+            nose.Sneeze("fucking much");
         }
     }
 }
