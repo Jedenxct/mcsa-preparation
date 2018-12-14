@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Examples\BackgroundThreads.cs" />
+    <Compile Include="Examples\ParallelExample.cs" />
     <Compile Include="Examples\ParametrizedThread.cs" />
+    <Compile Include="Examples\ThreadPoolExample.cs" />
     <Compile Include="Examples\ThreadStatic.cs" />
     <Compile Include="Interfaces\IExample.cs" />
     <Compile Include="Program.cs" />

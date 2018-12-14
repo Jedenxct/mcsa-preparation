@@ -16,6 +16,5 @@ namespace Threading.Examples
             // what is a?
             ThreadPool.QueueUserWorkItem((a) => Console.WriteLine("Previously queued, now running."));
         }
-  
     }
 }
