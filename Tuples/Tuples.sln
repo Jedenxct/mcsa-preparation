@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples", "Tuples\Tuples.csproj", "{FD9AD127-79F7-4A33-9A54-939409661AB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{3BAFA2A8-C1EF-44B5-B80A-D168E6BA3EA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD9AD127-79F7-4A33-9A54-939409661AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9AD127-79F7-4A33-9A54-939409661AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9AD127-79F7-4A33-9A54-939409661AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9AD127-79F7-4A33-9A54-939409661AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAFA2A8-C1EF-44B5-B80A-D168E6BA3EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAFA2A8-C1EF-44B5-B80A-D168E6BA3EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAFA2A8-C1EF-44B5-B80A-D168E6BA3EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAFA2A8-C1EF-44B5-B80A-D168E6BA3EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33504EA6-1008-4BA3-A6A4-A9F9419C2835}
+	EndGlobalSection
+EndGlobal
