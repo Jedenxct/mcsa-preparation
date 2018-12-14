@@ -2,7 +2,7 @@
 using System.Threading;
 using Threading.Interfaces;
 
-namespace Threading
+namespace Threading.Examples
 {
     public class BackgroundThreads : IExample
     {

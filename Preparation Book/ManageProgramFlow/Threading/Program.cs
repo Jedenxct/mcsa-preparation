@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Threading.Interfaces;
+using Threading.Examples;
 
 namespace Threading
 {
@@ -10,6 +11,12 @@ namespace Threading
         {
             IExample background = new BackgroundThreads();
             background.Run();
+
+            IExample parametrized = new ParametrizedThread();
+            parametrized.Run();
+
+            IExample threadStatic = new ThreadStatic();
+            threadStatic.Run();
         }
     }
 }
