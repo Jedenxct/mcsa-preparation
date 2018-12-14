@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
+using Threading.Interfaces;
 
 namespace Threading
 {
@@ -10,6 +8,8 @@ namespace Threading
     {
         static void Main(string[] args)
         {
+            IExample background = new BackgroundThreads();
+            background.Run();
         }
     }
 }
